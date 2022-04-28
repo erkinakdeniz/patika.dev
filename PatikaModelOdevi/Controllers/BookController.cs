@@ -28,7 +28,7 @@ namespace PatikaModelOdevi.Controllers
         {
             try
             {
-                UpdateBookCommand command = new UpdateBookCommand(_context,_mapper);
+                UpdateBookCommand command = new UpdateBookCommand(_context);
                 command.Model = updateBook;
                 command.Handle();
             }
