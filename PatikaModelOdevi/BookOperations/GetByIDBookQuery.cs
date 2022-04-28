@@ -13,13 +13,14 @@ namespace PatikaModelOdevi.BookOperations
     {
         
         private readonly BookStoreDbContext _dbContext;
+        public int id { get; set; }
         private readonly IMapper _mapper;
         public GetByIDBookQuery(BookStoreDbContext DbContext, IMapper mapper)
         {
             _dbContext = DbContext;
             _mapper = mapper;
         }
-        public BookViewModelGetByID Handle(int id)
+        public BookViewModelGetByID Handle()
         {
             var book = _dbContext.Books.SingleOrDefault(x => x.ID == id);
             if (book is null)

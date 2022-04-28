@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PatikaModelOdevi.BookOperations;
@@ -6,6 +8,7 @@ using PatikaModelOdevi.DBOperations;
 using PatikaModelOdevi.Entities;
 using System;
 using System.Collections.Generic;
+
 using System.Linq;
 using System.Threading.Tasks;
 using static PatikaModelOdevi.BookOperations.UpdateBookCommand;
@@ -26,10 +29,13 @@ namespace PatikaModelOdevi.Controllers
         [HttpPut]
         public IActionResult UpdateBook([FromBody] UpdateBookModel updateBook) 
         {
+            
             try
             {
                 UpdateBookCommand command = new UpdateBookCommand(_context);
+                UpdateBookCommandValidator validationRules = new UpdateBookCommandValidator();
                 command.Model = updateBook;
+                validationRules.ValidateAndThrow(command);
                 command.Handle();
             }
             catch (Exception ex)
@@ -55,7 +61,10 @@ namespace PatikaModelOdevi.Controllers
             try
             {
                 GetByIDBookQuery query = new GetByIDBookQuery(_context,_mapper);
-                var result = query.Handle(id);
+                query.id = id;
+                GetByIDBookQueryValidator validationRules = new GetByIDBookQueryValidator();
+                validationRules.ValidateAndThrow(query);
+                var result = query.Handle();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -75,6 +84,8 @@ namespace PatikaModelOdevi.Controllers
             {
                 DeleteBookCommand command = new DeleteBookCommand(_context);
                 command.id = id;
+                DeleteBookCommandValidator validationRules = new DeleteBookCommandValidator();
+                validationRules.ValidateAndThrow(command);
                 command.Handle();
                 return Ok();
             }

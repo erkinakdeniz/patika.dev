@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wj1g9ZKy67w3Iet4UMLrZr23k1FrDb7sXBLJ5FkD5sHbO2rk1ZqFgJRaWLcrH714nHtliqDc8ofk6Pd8b2drNg==",
+  "dgSpecHash": "fnEaWPiiNg8WJh6ecZL5LmQQwHJ7poP5zuIN4ws3mRcWt0F8409Gal3EDV3svpeXLLy11gSibBz+XhIxPHOEvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\ccnamcaank\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
