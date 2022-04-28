@@ -30,19 +30,14 @@ namespace PatikaModelOdevi.Controllers
         public IActionResult UpdateBook([FromBody] UpdateBookModel updateBook) 
         {
             
-            try
-            {
+            
                 UpdateBookCommand command = new UpdateBookCommand(_context);
                 UpdateBookCommandValidator validationRules = new UpdateBookCommandValidator();
                 command.Model = updateBook;
                 validationRules.ValidateAndThrow(command);
                 command.Handle();
-            }
-            catch (Exception ex)
-            {
-
-                return BadRequest(ex.Message);
-            }
+            
+           
             return Ok();
            
         }
@@ -58,19 +53,14 @@ namespace PatikaModelOdevi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetBooksByID(int id)
         {
-            try
-            {
+          
                 GetByIDBookQuery query = new GetByIDBookQuery(_context,_mapper);
                 query.id = id;
                 GetByIDBookQueryValidator validationRules = new GetByIDBookQueryValidator();
                 validationRules.ValidateAndThrow(query);
                 var result = query.Handle();
                 return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+           
 
             
 
@@ -80,23 +70,14 @@ namespace PatikaModelOdevi.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteBook(int id)
         {
-            try
-            {
+            
                 DeleteBookCommand command = new DeleteBookCommand(_context);
                 command.id = id;
                 DeleteBookCommandValidator validationRules = new DeleteBookCommandValidator();
                 validationRules.ValidateAndThrow(command);
                 command.Handle();
                 return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-
-
-
-
+           
         }
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PatikaModelOdevi.DBOperations;
+using PatikaModelOdevi.middlewares;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,6 +59,7 @@ namespace PatikaModelOdevi
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseCustomExceptionmiddle();
 
             app.UseEndpoints(endpoints =>
             {
