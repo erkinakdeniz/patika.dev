@@ -64,3 +64,9 @@ C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaM
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\ref\PatikaModelOdevi.dll
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.pdb
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.genruntimeconfig.cache
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

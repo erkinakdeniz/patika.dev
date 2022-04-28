@@ -1,9 +1,11 @@
-﻿using PatikaModelOdevi.Common;
+﻿using AutoMapper;
+
 using PatikaModelOdevi.DBOperations;
+
 using System;
-using System.Collections.Generic;
+
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace PatikaModelOdevi.BookOperations
 {
@@ -11,9 +13,11 @@ namespace PatikaModelOdevi.BookOperations
     {
         
         private readonly BookStoreDbContext _dbContext;
-        public GetByIDBookQuery(BookStoreDbContext DbContext)
+        private readonly IMapper _mapper;
+        public GetByIDBookQuery(BookStoreDbContext DbContext, IMapper mapper)
         {
             _dbContext = DbContext;
+            _mapper = mapper;
         }
         public BookViewModelGetByID Handle(int id)
         {
@@ -23,12 +27,12 @@ namespace PatikaModelOdevi.BookOperations
                 throw new InvalidOperationException("Kayıt yok");
             }
 
-            BookViewModelGetByID model = new BookViewModelGetByID();
-            model.Title = book.Title;
-            model.PageCount = book.PageCount;
-            model.PublishDate = book.PublishDate.Date.ToString("dd/MM/yyy");
-            model.Genre = ((GenreEnum)book.GenreId).ToString();
-            model.ID = book.ID;
+            BookViewModelGetByID model = _mapper.Map<BookViewModelGetByID>(book);
+            //model.Title = book.Title;
+            //model.PageCount = book.PageCount;
+            //model.PublishDate = book.PublishDate.Date.ToString("dd/MM/yyy");
+            //model.Genre = ((GenreEnum)book.GenreId).ToString();
+            //model.ID = book.ID;
             return model;
 
 

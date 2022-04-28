@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PatikaModelOdevi.BookOperations;
 using PatikaModelOdevi.DBOperations;
@@ -16,16 +17,18 @@ namespace PatikaModelOdevi.Controllers
     public class BookController : ControllerBase
     {
        private readonly BookStoreDbContext _context;
-        public BookController(BookStoreDbContext context)
+        private readonly IMapper _mapper;
+        public BookController(BookStoreDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         [HttpPut]
         public IActionResult UpdateBook([FromBody] UpdateBookModel updateBook) 
         {
             try
             {
-                UpdateBookCommand command = new UpdateBookCommand(_context);
+                UpdateBookCommand command = new UpdateBookCommand(_context,_mapper);
                 command.Model = updateBook;
                 command.Handle();
             }
@@ -51,7 +54,7 @@ namespace PatikaModelOdevi.Controllers
         {
             try
             {
-                GetByIDBookQuery query = new GetByIDBookQuery(_context);
+                GetByIDBookQuery query = new GetByIDBookQuery(_context,_mapper);
                 var result = query.Handle(id);
                 return Ok(result);
             }
