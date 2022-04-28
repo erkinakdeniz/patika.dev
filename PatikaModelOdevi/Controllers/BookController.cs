@@ -64,5 +64,25 @@ namespace PatikaModelOdevi.Controllers
 
 
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            try
+            {
+                DeleteBookCommand command = new DeleteBookCommand(_context);
+                command.id = id;
+                command.Handle();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
+
+
+        }
     }
 }

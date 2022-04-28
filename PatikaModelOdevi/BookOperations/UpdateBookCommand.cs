@@ -21,11 +21,11 @@ namespace PatikaModelOdevi.BookOperations
             {
                 throw new InvalidOperationException("Kitap bulunamadı");
             }
-            book.Title = Model.Title;
-            book.GenreId = Model.GenreId;
-            book.PageCount = Model.PageCount;
-            book.PublishDate = Model.PublishDate;
-            _dbContext.Books.Update(book);
+            book.Title = Model.Title !=default ? Model.Title:book.Title;
+            book.GenreId = Model.GenreId != default ? Model.GenreId : book.GenreId;
+            book.PageCount = Model.PageCount != default ? Model.PageCount : book.PageCount;
+            book.PublishDate = Model.PublishDate != default ? Model.PublishDate : book.PublishDate;
+            
             _dbContext.SaveChanges();
 
         }

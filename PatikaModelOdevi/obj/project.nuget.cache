@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6U3Guo4jRxScjwLKr6IqNhlv0TFKqALomvx+2A9MzgQ/ieucUNriH+R2G6lefHEy8/av09/kM2lW1NXePmNPkQ==",
+  "dgSpecHash": "mXsjKdDBN6DsmWrlLc6gkQhU+zBLErnHGo46Ktof3HlVJGJq3I43Y++A9zMgXtxW0J6fkaBI3jhaT4F9kQNUCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
+  "projectFilePath": "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
     "C:\\Users\\ccnamcaank\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",

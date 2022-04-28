@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\PatikaModelOdevi.csproj": {}
+    "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\PatikaModelOdevi.csproj": {
+    "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
+        "projectUniqueName": "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
         "projectName": "PatikaModelOdevi",
-        "projectPath": "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
+        "projectPath": "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\PatikaModelOdevi.csproj",
         "packagesPath": "C:\\Users\\ccnamcaank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ccnamcaank\\source\\repos\\PatikaModelOdevi\\PatikaModelOdevi\\obj\\",
+        "outputPath": "C:\\Users\\ccnamcaank\\Desktop\\patika.dev\\PatikaModelOdevi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
