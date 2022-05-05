@@ -12,10 +12,10 @@ namespace PatikaModelOdevi.BookOperations
     public class GetByIDBookQuery
     {
         
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
         public int id { get; set; }
         private readonly IMapper _mapper;
-        public GetByIDBookQuery(BookStoreDbContext DbContext, IMapper mapper)
+        public GetByIDBookQuery(IBookStoreDbContext DbContext, IMapper mapper)
         {
             _dbContext = DbContext;
             _mapper = mapper;

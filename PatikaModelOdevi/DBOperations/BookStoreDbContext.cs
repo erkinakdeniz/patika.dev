@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PatikaModelOdevi.DBOperations
 {
-    public class BookStoreDbContext:DbContext
+    public class BookStoreDbContext: DbContext, IBookStoreDbContext
     {
         
         public BookStoreDbContext(DbContextOptions<BookStoreDbContext> options)
@@ -19,7 +19,10 @@ namespace PatikaModelOdevi.DBOperations
             optionsBuilder.UseInMemoryDatabase("BookStoreDB");
         }
 
+        
+
         public DbSet<Book> Books { get; set; }
+        public override int SaveChanges() => base.SaveChanges();
 
     }
 }

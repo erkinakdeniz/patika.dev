@@ -49,7 +49,6 @@ C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Swashbu
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.csproj.AssemblyReference.cache
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.AssemblyInfoInputs.cache
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.AssemblyInfo.cs
@@ -72,3 +71,4 @@ C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Microso
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\ccnamcaank\Desktop\patika.dev\PatikaModelOdevi\obj\Debug\net5.0\PatikaModelOdevi.csproj.AssemblyReference.cache

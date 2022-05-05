@@ -9,9 +9,9 @@ namespace PatikaModelOdevi.BookOperations
     public class UpdateBookCommand
     {
         public UpdateBookModel Model { get; set; }
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public UpdateBookCommand(BookStoreDbContext dbContext)
+        public UpdateBookCommand(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

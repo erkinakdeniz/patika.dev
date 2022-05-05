@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PatikaModelOdevi.DBOperations;
 using PatikaModelOdevi.middlewares;
+using PatikaModelOdevi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +40,10 @@ namespace PatikaModelOdevi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PatikaModelOdevi", Version = "v1" });
             });
             services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
+            services.AddScoped<IBookStoreDbContext>(provider=>provider.GetService<BookStoreDbContext>());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddSingleton<ILoggerService, ConsoleLogger>();
+            
 
 
         }

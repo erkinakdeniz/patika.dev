@@ -10,8 +10,8 @@ namespace PatikaModelOdevi.BookOperations
 {
     public class GetBooksQuery
     {
-        private readonly BookStoreDbContext _dbContext;
-        public GetBooksQuery(BookStoreDbContext DbContext)
+        private readonly IBookStoreDbContext _dbContext;
+        public GetBooksQuery(IBookStoreDbContext DbContext)
         {
             _dbContext = DbContext;
         }
